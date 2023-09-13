@@ -64,10 +64,9 @@
             android:layout_marginLeft="32dp"
             android:layout_marginRight="32dp"
             android:layout_marginBottom="4dp"
-            android:backgroundTint="#1ed760"
+            android:backgroundTint="@color/green"
             android:text="@string/sign_up_btn"
-            android:textAppearance="?attr/textAppearanceBodyLarge"
-            android:textColor="@color/md_theme_dark_background" />
+            android:textAppearance="?attr/textAppearanceBodyLarge" />
 
         <Button
             android:id="@+id/googleButton"

@@ -48,7 +48,6 @@
         <item name="textAppearanceLabelLarge">@style/TextAppearance.SpotifyUIClone.LabelLarge</item>
         <item name="textAppearanceLabelMedium">@style/TextAppearance.SpotifyUIClone.LabelMedium</item>
         <item name="textAppearanceLabelSmall">@style/TextAppearance.SpotifyUIClone.LabelSmall</item>
-
     </style>
     <!--Display-->
     <style name="TextAppearance.SpotifyUIClone.DisplayLarge" parent="TextAppearance.Material3.DisplayLarge">
@@ -168,8 +167,8 @@
     </style>
 
     <style name="TextAppearance.SpotifyUIClone.LabelSmall" parent="TextAppearance.Material3.LabelSmall">
-        <item name="fontFamily">@font/metropolis_regular</item>
-        <item name="android:textStyle">normal</item>
+        <item name="fontFamily">@font/metropolis_bold</item>
+        <item name="android:textStyle">bold</item>
         <item name="android:textAllCaps">false</item>
         <item name="android:textSize">11sp</item>
         <item name="android:letterSpacing">0</item>
