@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Spotify UI Clone</string>
+    <string name="logo">logoIcon</string>
+    <string name="logInTitle">Millions of songs \n Free on Spotify.</string>
+    <string name="sign_up_btn">Sign up free</string>
+    <string name="login_google_btn">Continue with Google</string>
+    <string name="login_facebook_btn">Continue with Facebook</string>
+    <string name="login_apple_btn">Continue with Apple</string>
+    <string name="log_in_btn">Log in</string>
 </resources>
