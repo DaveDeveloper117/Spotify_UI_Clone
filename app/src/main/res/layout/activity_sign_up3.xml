@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:focusableInTouchMode="true"
-    tools:context=".login.SignUp3">
+    tools:context=".login.signin.SignUp3">
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/backFAB"
@@ -52,7 +52,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titleTextView"
-        app:endIconMode="custom"
+        app:endIconMode="dropdown_menu"
         app:endIconDrawable="@drawable/round_check_24"
         app:endIconContentDescription="@string/content_description_end_icon">
 
@@ -71,7 +71,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
         android:text="Next"
-        android:backgroundTint="@color/green"
+        android:enabled="false"
         app:layout_constraintEnd_toEndOf="@+id/filledTextField"
         app:layout_constraintStart_toStartOf="@+id/filledTextField"
         app:layout_constraintTop_toBottomOf="@+id/filledTextField" />

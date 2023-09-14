@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         handler?.postDelayed({
-            val intent = Intent(this@MainActivity, LogIn::class.java)
+            intent = Intent(this@MainActivity, LogIn::class.java)
             startActivity(intent)
             finish()
         }, 1000)

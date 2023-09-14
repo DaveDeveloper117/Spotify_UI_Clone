@@ -1,27 +1,27 @@
-package com.davedevab.spotifyuiclone.login
+package com.davedevab.spotifyuiclone.login.signin
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
-import android.widget.Button
-import android.widget.EditText
+import androidx.core.app.ActivityOptionsCompat
 import androidx.core.content.ContextCompat
+import androidx.core.view.ViewCompat
 import com.davedevab.spotifyuiclone.R
-import com.davedevab.spotifyuiclone.databinding.ActivitySignUp2Binding
-import com.google.android.material.floatingactionbutton.FloatingActionButton
+import com.davedevab.spotifyuiclone.databinding.ActivitySignUpBinding
+import com.davedevab.spotifyuiclone.login.LogIn
 
-class SignUp2 : AppCompatActivity() {
-    lateinit var binding: ActivitySignUp2Binding
+class SignUp : AppCompatActivity() {
+    lateinit var binding: ActivitySignUpBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivitySignUp2Binding.inflate(layoutInflater)
+        binding = ActivitySignUpBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         binding.nextButton.isEnabled = false
 
-        binding.passEditText.addTextChangedListener(object : TextWatcher {
+        binding.emailEditText.addTextChangedListener(object : TextWatcher{
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
             }
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
@@ -29,29 +29,28 @@ class SignUp2 : AppCompatActivity() {
             override fun afterTextChanged(s: Editable?) {
                 if (s.isNullOrBlank()) {
                     binding.nextButton.isEnabled = false
-                    ContextCompat.getColor(this@SignUp2, R.color.md_theme_dark_outlineVariant)
-                    binding.nextButton.backgroundTintList = ContextCompat.getColorStateList(this@SignUp2, R.color.md_theme_dark_outlineVariant)
+                    ContextCompat.getColor(this@SignUp, R.color.md_theme_dark_outlineVariant)
+                    binding.nextButton.backgroundTintList = ContextCompat.getColorStateList(this@SignUp, R.color.md_theme_dark_outlineVariant)
                 } else {
                     binding.nextButton.isEnabled = true
-                    ContextCompat.getColor(this@SignUp2, R.color.green)
-                    binding.nextButton.backgroundTintList = ContextCompat.getColorStateList(this@SignUp2, R.color.green)
+                    ContextCompat.getColor(this@SignUp, R.color.green)
+                    binding.nextButton.backgroundTintList = ContextCompat.getColorStateList(this@SignUp, R.color.green)
                 }
             }
 
         })
 
         binding.nextButton.setOnClickListener {
-            val intent = Intent(this, SignUp3::class.java)
+            intent = Intent(this, SignUp2::class.java)
             startActivity(intent)
             finish()
         }
 
         binding.backFAB.setOnClickListener {
-            val intent = Intent(this, SignUp::class.java)
+            intent = Intent(this, LogIn::class.java)
             startActivity(intent)
             finish()
         }
-
 
     }
 }

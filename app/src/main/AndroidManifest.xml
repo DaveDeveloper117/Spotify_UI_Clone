@@ -13,15 +13,24 @@
         android:theme="@style/Theme.SpotifyUIClone"
         tools:targetApi="31">
         <activity
-            android:name=".login.SignUp3"
+            android:name=".login.onboarding.ChoosePodcast"
             android:exported="false" />
         <activity
-            android:name=".login.SignUp2"
+            android:name=".login.onboarding.ChooseArtist"
+            android:exported="false" />
+        <activity
+            android:name=".login.signin.SignUp4"
+            android:exported="false" />
+        <activity
+            android:name=".login.signin.SignUp3"
+            android:exported="false" />
+        <activity
+            android:name=".login.signin.SignUp2"
             android:exported="false"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
         <activity
-            android:name=".login.SignUp"
+            android:name=".login.signin.SignUp"
             android:exported="false"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />

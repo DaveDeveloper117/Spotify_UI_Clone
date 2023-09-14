@@ -3,9 +3,8 @@ package com.davedevab.spotifyuiclone.login
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
-import com.davedevab.spotifyuiclone.R
 import com.davedevab.spotifyuiclone.databinding.ActivityLogInBinding
+import com.davedevab.spotifyuiclone.login.signin.SignUp
 
 class LogIn : AppCompatActivity() {
     private lateinit var binding: ActivityLogInBinding
@@ -15,7 +14,7 @@ class LogIn : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.signInButton.setOnClickListener {
-            val intent = Intent(this, SignUp::class.java)
+            intent = Intent(this, SignUp::class.java)
             startActivity(intent)
             finish()
         }
