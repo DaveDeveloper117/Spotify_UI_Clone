@@ -5,6 +5,6 @@ Spotify Mobile UI Clone
 
 ## Screenshots 🖼️
 
-<img src="assets/splash.png" alt="splash" width="300"> <img src="assets/login.png" alt="login" width="300"> <img src="assets/artist.png" alt="artist" width="300"> <img src="assets/podcast.png" alt="podcast" width="300">
+<img src="assets/splash.png" alt="splash" width="300"> <img src="assets/login.png" alt="login" width="300"> <img src="assets/artist.png" alt="artist" width="300"> <img src="assets/podcast.png" alt="podcast" width="300"> <img src="assets/home.png" alt="home" width="300"> <img src="assets/search.png" alt="search" width="300"> <img src="assets/library.png" alt="library" width="300">
 
 
