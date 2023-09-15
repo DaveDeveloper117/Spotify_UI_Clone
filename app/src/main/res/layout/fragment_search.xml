@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".home.content.Search">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:paddingTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_weight="1"
+                android:textAppearance="?attr/textAppearanceTitleLarge"
+                android:text="Search"/>
+
+            <Button
+                android:layout_weight="0"
+                style="?attr/materialIconButtonStyle"
+                app:icon="@drawable/outline_photo_camera_24"
+                app:iconTint="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+
+        <com.google.android.material.search.SearchBar
+            android:id="@+id/search_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/cardview_dark_background"
+            android:hint="Artist, songs, or podcasts"
+            android:textAppearance="?attr/textAppearanceTitleSmall" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbarSize="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="100dp"
+                android:orientation="vertical">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?attr/textAppearanceLabelLarge"
+                        android:text="Your top genres"/>
+
+                <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:columnCount="2">
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="0dp"
+                            android:layout_height="100dp"
+                            android:layout_margin="10dp"
+                            android:backgroundTint="#9854B2"
+                            android:checkable="true"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:layout_columnWeight="1"
+                            app:cardCornerRadius="8dp">
+                            <!-- Media -->
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingStart="16dp"
+                                android:paddingTop="16dp"
+                                android:gravity="start"
+                                android:maxLines="2"
+                                android:text="Pop"
+                                android:textAppearance="?attr/textAppearanceLabelLarge"
+                                android:textStyle="bold" />
+
+                            <com.google.android.material.imageview.ShapeableImageView
+                                app:shapeAppearance="@style/ShapeAppearance.Material3.Corner.Small"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_gravity="end|bottom"
+                                android:rotation="25"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/billie_eilish"
+                                android:importantForAccessibility="no" />
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="0dp"
+                            android:layout_height="100dp"
+                            android:layout_margin="10dp"
+                            android:backgroundTint="#678026"
+                            android:checkable="true"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:layout_columnWeight="1"
+                            app:cardCornerRadius="8dp">
+                            <!-- Media -->
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingStart="16dp"
+                                android:paddingTop="16dp"
+                                android:gravity="start"
+                                android:maxLines="2"
+                                android:text="Indie"
+                                android:textAppearance="?attr/textAppearanceLabelLarge"
+                                android:textStyle="bold" />
+                            <com.google.android.material.imageview.ShapeableImageView
+                                app:shapeAppearance="@style/ShapeAppearance.Material3.Corner.Small"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_gravity="end|bottom"
+                                android:rotation="25"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/recent_4"
+                                android:importantForAccessibility="no" />
+                        </com.google.android.material.card.MaterialCardView>
+
+                    </GridLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?attr/textAppearanceLabelLarge"
+                    android:text="Popular podcast categories"/>
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:columnCount="2">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="10dp"
+                        android:backgroundTint="#3371E4"
+                        android:checkable="true"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:layout_columnWeight="1"
+                        app:cardCornerRadius="8dp">
+                        <!-- Media -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="16dp"
+                            android:paddingTop="16dp"
+                            android:gravity="start"
+                            android:maxLines="2"
+                            android:text="News &amp;\nPolitics"
+                            android:textAppearance="?attr/textAppearanceLabelLarge"
+                            android:textStyle="bold" />
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            app:shapeAppearance="@style/ShapeAppearance.Material3.Corner.Small"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="end|bottom"
+                            android:rotation="25"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/podcast_7"
+                            android:importantForAccessibility="no" />
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="10dp"
+                        android:backgroundTint="#CF4321"
+                        android:checkable="true"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:layout_columnWeight="1"
+                        app:cardCornerRadius="8dp">
+                        <!-- Media -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="16dp"
+                            android:paddingTop="16dp"
+                            android:gravity="start"
+                            android:maxLines="2"
+                            android:text="Comedy"
+                            android:textAppearance="?attr/textAppearanceLabelLarge"
+                            android:textStyle="bold" />
+                        <com.google.android.material.imageview.ShapeableImageView
+                            app:shapeAppearance="@style/ShapeAppearance.Material3.Corner.Small"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="end|bottom"
+                            android:rotation="25"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/podcast_3"
+                            android:importantForAccessibility="no" />
+                    </com.google.android.material.card.MaterialCardView>
+
+                </GridLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?attr/textAppearanceLabelLarge"
+                    android:text="Browse all"/>
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:columnCount="2">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="10dp"
+                        android:backgroundTint="#ABBB6D"
+                        android:checkable="true"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:layout_columnWeight="1"
+                        app:cardCornerRadius="8dp">
+                        <!-- Media -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="16dp"
+                            android:paddingTop="16dp"
+                            android:gravity="start"
+                            android:maxLines="2"
+                            android:text="2021 Wrapped"
+                            android:textAppearance="?attr/textAppearanceLabelLarge"
+                            android:textStyle="bold" />
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            app:shapeAppearance="@style/ShapeAppearance.Material3.Corner.Small"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="end|bottom"
+                            android:rotation="25"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/wrap"
+                            android:importantForAccessibility="no" />
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="10dp"
+                        android:backgroundTint="#223160"
+                        android:checkable="true"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:layout_columnWeight="1"
+                        app:cardCornerRadius="8dp">
+                        <!-- Media -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="16dp"
+                            android:paddingTop="16dp"
+                            android:gravity="start"
+                            android:maxLines="2"
+                            android:text="Podcast"
+                            android:textAppearance="?attr/textAppearanceLabelLarge"
+                            android:textStyle="bold" />
+                        <com.google.android.material.imageview.ShapeableImageView
+                            app:shapeAppearance="@style/ShapeAppearance.Material3.Corner.Small"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="end|bottom"
+                            android:rotation="25"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/podcast_1"
+                            android:importantForAccessibility="no" />
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="10dp"
+                        android:backgroundTint="#75A768"
+                        android:checkable="true"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:layout_columnWeight="1"
+                        app:cardCornerRadius="8dp">
+                        <!-- Media -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="16dp"
+                            android:paddingTop="16dp"
+                            android:gravity="start"
+                            android:maxLines="2"
+                            android:text="Made for you"
+                            android:textAppearance="?attr/textAppearanceLabelLarge"
+                            android:textStyle="bold" />
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            app:shapeAppearance="@style/ShapeAppearance.Material3.Corner.Small"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="end|bottom"
+                            android:rotation="25"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/lana_bebe"
+                            android:importantForAccessibility="no" />
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="10dp"
+                        android:backgroundTint="#8768A7"
+                        android:checkable="true"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:layout_columnWeight="1"
+                        app:cardCornerRadius="8dp">
+                        <!-- Media -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="16dp"
+                            android:paddingTop="16dp"
+                            android:gravity="start"
+                            android:maxLines="2"
+                            android:text="Charts"
+                            android:textAppearance="?attr/textAppearanceLabelLarge"
+                            android:textStyle="bold" />
+                        <com.google.android.material.imageview.ShapeableImageView
+                            app:shapeAppearance="@style/ShapeAppearance.Material3.Corner.Small"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="end|bottom"
+                            android:rotation="25"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/cuco"
+                            android:importantForAccessibility="no" />
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="10dp"
+                        android:backgroundTint="#AD1457"
+                        android:checkable="true"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:layout_columnWeight="1"
+                        app:cardCornerRadius="8dp">
+                        <!-- Media -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="16dp"
+                            android:paddingTop="16dp"
+                            android:gravity="start"
+                            android:maxLines="2"
+                            android:text="New releases"
+                            android:textAppearance="?attr/textAppearanceLabelLarge"
+                            android:textStyle="bold" />
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            app:shapeAppearance="@style/ShapeAppearance.Material3.Corner.Small"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="end|bottom"
+                            android:rotation="25"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/the_weeknd"
+                            android:importantForAccessibility="no" />
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="10dp"
+                        android:backgroundTint="#BA68C8"
+                        android:checkable="true"
+                        android:clickable="true"
+                        android:focusable="true"
+                        app:cardCornerRadius="8dp">
+                        <!-- Media -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="start"
+                            android:maxLines="2"
+                            android:paddingStart="16dp"
+                            android:paddingTop="16dp"
+                            android:text="Discover"
+                            android:textAppearance="?attr/textAppearanceLabelLarge"
+                            android:textStyle="bold" />
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="end|bottom"
+                            android:importantForAccessibility="no"
+                            android:rotation="25"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/tyler_the_creator"
+                            app:shapeAppearance="@style/ShapeAppearance.Material3.Corner.Small" />
+                    </com.google.android.material.card.MaterialCardView>
+
+                </GridLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</FrameLayout>
