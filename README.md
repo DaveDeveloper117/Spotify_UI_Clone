@@ -1,4 +1,4 @@
-# Spotify UI Clone
+# Spotify UI Clone <img align="center" height="40" width="40" src="https://cdn.simpleicons.org/spotify/1DB954" />
 
 Spotify UI Clone es una aplicación móvil que busca replicar la interfaz de usuario de Spotify. Esta aplicación se centra principalmente en la creación de una experiencia de usuario similar a la de Spotify en dispositivos móviles. Es importante destacar que se trata principalmente de una interfaz de usuario (UI) para practicar el desarrollo de UI/UX utilizando Kotlin y Android.
 
