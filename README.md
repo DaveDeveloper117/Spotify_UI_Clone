@@ -40,7 +40,8 @@ Durante el desarrollo de este proyecto, se han adquirido conocimientos y habilid
 1. Clona o descarga el repositorio en tu máquina local:
 
    ```shell
-   git clone https://github.com/DaveDeveloper117/Spotify_UI_Clone.git` 
+   git clone https://github.com/DaveDeveloper117/Spotify_UI_Clone.git
+   ``` 
 
 2.  Abre el proyecto en Android Studio.
     
