@@ -1,4 +1,4 @@
-# Spotify UI Clone <img align="center" height="40" width="40" src="https://cdn.simpleicons.org/spotify/1DB954" />
+# Spotify UI Clone <img align="center" height="40" width="40" src="https://cdnlogo.com/logos/s/89/spotify.svg" />
 
 Spotify UI Clone es una aplicación móvil que busca replicar la interfaz de usuario de Spotify. Esta aplicación se centra principalmente en la creación de una experiencia de usuario similar a la de Spotify en dispositivos móviles. Es importante destacar que se trata principalmente de una interfaz de usuario (UI) para practicar el desarrollo de UI/UX utilizando Kotlin y Android.
 
@@ -27,11 +27,13 @@ Durante el desarrollo de este proyecto, se han adquirido conocimientos y habilid
 ## Inspiración UI 🎨
 
 - UI Inspiration: [Spotify Mobile UI Kit](https://www.figma.com/community/file/1052832340031141040/Spotify---Mobile-UI-Kit)
-<img src="assets/ui_inspiration.png" alt="splash" width="1000">
+<img align="center" src="assets/ui_inspiration.png" alt="splash" width="1024">
 
 ## Capturas de Pantalla 🖼️
 
+<div align="center">
 <img src="assets/splash.png" alt="splash" width="200"> <img src="assets/login.png" alt="login" width="200"> <img src="assets/artist.png" alt="artist" width="200"> <img src="assets/podcast.png" alt="podcast" width="200"> <img src="assets/home.png" alt="home" width="200"> <img src="assets/search.png" alt="search" width="200"> <img src="assets/library.png" alt="library" width="200">
+</div>
 
 ## Instalación y Uso 📥
 
